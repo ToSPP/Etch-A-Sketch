@@ -1,0 +1,22 @@
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.header, .controlButton {
+	text-align: center;
+}
+
+.gameField {
+	width: 600px;
+	height: 600px;
+	margin: 20px auto;
+	border: 1px solid #999;
+}
+
+.pixel {
+	float: left;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	background: #e6e6e6;
+}
