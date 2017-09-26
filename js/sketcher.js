@@ -8,3 +8,11 @@ function fillField(size) {
 	
 }
 fillField(size);
+
+$(function() {
+	$('.pixel').mouseenter(function() {
+		$(this).addClass('fill');
+	})
+})
+
+
