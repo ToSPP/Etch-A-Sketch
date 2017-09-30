@@ -3,23 +3,43 @@
 <head>
 	<title>Etch-A-Sketch</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
 	<div class="header">
-		<h1>Etch-A-Sketch</h1>
+		<h1>etch-A-Sketch</h1>
 		<p>by ToSPP</p>
 	</div>
 	<div class="controlButton">
-		<input type="button" name="randomColor" value="Random color">
-		<input type="button" name="chooseColor" value="Choose color">
-		<input type="button" name="clearField" value="Clear field">
+		<input type="button" name="randomColor" onclick="rndColor = 1; shdColor = 0;" value="Random color">
+		<input type="button" name="shadeColor" onclick="rndColor = 0; shdColor = 1;" value="Shade color">
+		<input type="button" name="pickColor" onclick="viewColorPicker()" value="Pick a color" >
+		<input type="button" name="clearField" onclick="clearField()" value="Clear field">
+		<p>Press 'd' to Enable/Disable drawing.</p>
+	</div>
+	<div class="colorPicker">
+		<p><strong>Pick a color</strong></p>
+		<div class="colors">
+			<a href="#" class="black"></a>
+			<a href="#" class="gray"></a>
+			<a href="#" class="white"></a>
+			<a href="#" class="purple"></a>
+			<a href="#" class="red"></a>
+			<a href="#" class="maroon"></a>
+			<a href="#" class="yellow"></a>
+			<a href="#" class="lime"></a>
+			<a href="#" class="green"></a>
+			<a href="#" class="aqua"></a>
+			<a href="#" class="teal"></a>
+			<a href="#" class="blue"></a>
+		</div>
 	</div>
 	<div class="gameField">
 		
 	</div>
 </div>
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="js/sketcher.js"></script>
 </body>
 </html>

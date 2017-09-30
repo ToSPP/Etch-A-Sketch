@@ -1,17 +1,60 @@
 .wrapper {
 	width: 800px;
 	margin: 0 auto;
+	position: relative;
+	background: url(../images/back_sm.png) no-repeat 48% 0;
 }
 
 .header, .controlButton {
 	text-align: center;
 }
 
+.header h1 {
+	padding-top: 28px;
+	font-size: 48px;
+	font-family: 'Cedarville Cursive', cursive;
+	color: #4ADB8E;
+}
+
+.header p {
+	position: absolute;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+	top: 23px;
+	right: 266px;
+	color: #fff;
+}
+
+.controlButton input, .controlButton input[checked] {
+	padding: 5px;
+	margin: 0 5px; 
+	background: #FF991F;
+	border: 1px solid #A65F0A;
+	border-radius: 3px;
+	outline: 0;
+    outline-offset: 0;
+}
+
+.controlButton input:hover {
+	background: #FFB257;
+	border: 1px solid #BF8641;
+	box-shadow: 0 0 7px #FF991F;
+}
+
+.controlButton p {
+	margin: 7px 0 0 0;
+	font-style: italic;
+	font-size: 14px;
+}
+
 .gameField {
-	width: 600px;
-	height: 600px;
-	margin: 20px auto;
-	border: 1px solid #999;
+	width: 520px;
+	height: 520px;
+	margin: 10px auto;
+	border: 7px solid #1C458B;
+	border-radius: 5px;
+	background: #000;
 }
 
 .pixel {
@@ -24,3 +67,72 @@
 .fill {
 	background: #FF0000;
 }
+
+.colorPicker p {
+	font-style: italic;
+	padding: 0;
+	margin: 0 0 3px 0;
+}
+
+.colorPicker {
+	width: 100px;
+	display: none;
+	text-align: center;
+	background: #F5F5F5;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.colors > a {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #DCDCDC;
+	display: inline-block;
+	margin: -2px;
+}
+
+.colorPicker.visible {
+	display: block;
+	position: absolute;
+	top: 87px;
+	right: 92px;
+}
+
+.black {
+	background: #000;
+}
+.gray {
+	background: #808080;
+}
+.white {
+	background: #fff;
+}
+.purple {
+	background: #800080;
+}
+.red {
+	background: #FF0000;
+}
+.maroon {
+	background: #800000;
+}
+.yellow {
+	background: #FFFF00;
+}
+.lime {
+	background: #00FF00;
+}
+.green {
+	background: #008000;
+}
+.aqua {
+	background: #00FFFF;
+}
+.teal {
+	background: #008080;
+}
+.blue {
+	background: #0000FF;
+}
+
